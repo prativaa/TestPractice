@@ -12,14 +12,14 @@ def convert_number(num, _from, to)
 end
 
 def converting_decimal_to_base(n, base)
-    remArr = []
-    while n > 0
-  	  dividend = n/base
-  	  rem = n%base
-  	  n = dividend
-  	  remArr.push(rem)
-    end
-    remArr.reverse.join('')
+  remArr = []
+  while n > 0
+	  dividend = n/base
+	  rem = n%base
+	  n = dividend
+	  remArr.push(rem)
+  end
+  remArr.reverse.join('')
 end
 
 binary_result = convert_number(num, "decimal" , "binary")
