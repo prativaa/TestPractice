@@ -5,7 +5,7 @@ def boxy(num)
 	if (num>0)
 		tb = (1..num).to_a.map(&:to_i)
 		puts " -" * num
-  	puts "|" + tb.join('|') + "|"
+  		puts "|" + tb.join('|') + "|"
 		puts " -" * num
 	end
 end
