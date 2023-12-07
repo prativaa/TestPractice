@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-require_relative 'box'
+require_relative '../box'
 
 RSpec.describe do
   describe "boxy" do

@@ -1,4 +1,4 @@
-require_relative 'greatest_num'
+require_relative '../greatest_num'
 
 RSpec.describe do
   describe "#get_user_input" do

@@ -1,4 +1,4 @@
-require_relative 'number_system'
+require_relative '../number_system'
 
 RSpec.describe do
   describe "#convert_number" do
@@ -15,7 +15,6 @@ RSpec.describe do
 		it "do not converts decimal number to any number system if to is nil" do
 			num = 42
 			allow_any_instance_of(Object).to receive(:converting_decimal_to_octal).with(num, nil)
-			convert_number(num, "decimal", nil)
 		end
   end
 

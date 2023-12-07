@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-require_relative "length_of_string"
+require_relative "../length_of_string"
 
 RSpec.describe do
   describe "length_of_string" do
