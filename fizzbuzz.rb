@@ -7,3 +7,5 @@ def fizzbuzz
 		puts (result.empty? ? i : result)
 	end
 end
+
+fizzbuzz
