@@ -1,16 +1,13 @@
 puts "Enter any sentence"
-str = gets
+str = gets.downcase
 puts "Your input is: #{str}"
-without_space = str.gsub(/\s+/, '')
-without_space = without_space.downcase
-
-frequency = Hash.new(0)
-without_space.each_char.with_index do |ch, i|
-    counts = without_space.count(without_space[i])
-    frequency[ch] = counts
+char_without_space = str.gsub(/\s+/, '')
+char_frequency = Hash.new(0)
+char_without_space.each_char do |ch|
+  char_frequency[ch] += 1 unless ch == ' '
 end
 
 puts "After counting each character frequency"
-frequency.each do |ch, count|
+char_frequency.each do |ch, count|
     puts "#{ch}: #{count}"
 end
